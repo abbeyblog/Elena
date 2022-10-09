@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style type="text/css" media="all">
+body{
+background-image: url(newBot.jpeg);
+background-color: #292020;
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: right -25%;
+position: fixed;
+}
+      
+#scroll-container {
+  height: 80em;
+}
+
+#scroll-text {
+  height: 100%;
+  text-align: center;
+  color: white;
+  
+  /* animation properties */
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -webkit-animation: my-animation 1s linear infinite;
+  animation: my-animation 50s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+  p{
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-family: Monospace;
+  }    
+  button{
+    font-size: 30px;
+    background: crimson;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+  }    
+    </style>
+  </head>
+  <body>
+    <button>Back</button>
+
+<div id="scroll-container">
+   <div id="scroll-text">
+  <h2>Elena: Your Personal AI Companion...</h2>
+ <p>My name is Elena. I am an AI program developed to keep your company through interesting chats and conversation</p>
+ <p>Our conversations can range from simple to fairly complex, based on diverse topics and areas of discussions like sports, movies, books, interests, jokes, games, quiz, riddles and lots more! However I was not designed to keep your personal information like names and location </p> 
+ <p>And please, keep in mind that I'm still a work in progress. I'm the first of my kind in my company. I still have a lot to catch up on. So, keep our conversation simple, concise and avoid implicit and ambiguous expressions. Please keep your chats as simple as I can understand, for now</p>
+ <p>Thank you so much for your understanding. I promise to improve and serve humanity better. I love you so much ♥️♥️♥️</p>
+ 
+ 
+      </div>
+    </div>
+    
+    
+<script type="text/javascript" charset="utf-8">
+ function back(){
+   window.location.replace("main.html");
+ }
+ 
+var menu = document.querySelector("button");
+menu.onclick = back;
+
+</script>
+  </body>
+</html>
