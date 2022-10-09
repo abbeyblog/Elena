@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style type="text/css" media="all">
+body{
+background-image: url(bg1.jpeg);
+background-color: black;
+background-size: 100%;
+background-repeat: no-repeat;
+position: fixed;
+font-family: helvetica;
+}
+      
+#scroll-container {
+  height: 80em;
+}
+
+#scroll-text {
+  height: 100%;
+  text-align: center;
+  color: white;
+  
+  /* animation properties */
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -webkit-animation: my-animation 1s linear infinite;
+  animation: my-animation 40s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+  p{
+    margin-bottom: 100px;
+    font-size: 20px;
+  }  
+  h2{
+    margin-bottom: -10px;
+  }
+  ul{
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  li{
+    margin-bottom: 5px;
+  }
+  button{
+    font-size: 30px;
+    background: crimson;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+  }    
+    </style>
+  </head>
+  <body>
+    <button>Back</button>
+
+<div id="scroll-container">
+   <div id="scroll-text">
+  <p>
+  <h2>Elena: Your Personal AI Companion 
+  <br> © Phenomenal Softwares, <br /> Osogbo, Osun State, <br /> Nigeria <br /> All rights reserved
+  </h2>
+  </p>
+ 
+   <h2>Credits</h2>
+   <ul>
+  <li> Prophet Blessing Oyesiji </li>  
+  <li>Habsag</li> 
+  <li>DJ Tech </li>
+  <li>Ojo Twins</li>
+  <li>w3schools </li> 
+  <li>Dev.to </li> 
+  <li>Mimo </li> 
+  <li>Foolish Developer </li>
+   </ul>
+  
+ <h4>Thank you for using our app!</h4> 
+ 
+ 
+      </div>
+    </div>
+    
+    
+<script type="text/javascript" charset="utf-8">
+ function back(){
+   window.location.replace("main.html");
+ }
+ 
+var menu = document.querySelector("button");
+menu.onclick = back;
+
+</script>
+  </body>
+</html>
